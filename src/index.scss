@@ -1,0 +1,16 @@
+@import "scss/index";
+
+body {
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    background-color: $inputs-color !important;
+    color: $text-color-dark !important;
+    &:focus {
+        border-color: $inputs-color-focus !important;
+    }
+}
