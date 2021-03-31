@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import { Image } from "semantic-ui-react";
-import logo from "../../img/logo.png";
+import logo from "../../img/logo_old.png";
 import s from "./header.module.scss";
 
 const Header: React.FC = () => {

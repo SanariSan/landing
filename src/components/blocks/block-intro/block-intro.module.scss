@@ -6,7 +6,7 @@
     position: relative;
     height: 760px;
 
-    background: center/100% no-repeat url("../../../img/head.png") !important;
+    background: center/100% no-repeat url("../../../img/1.png") !important;
     background-size: cover !important;
     overflow-y: hidden;
 
@@ -15,18 +15,7 @@
     }
 
     .overlay {
-        background: rgb(23, 16, 53);
-        background: linear-gradient(
-            90deg,
-            rgba(21, 15, 51, 0.86) 0%,
-            rgba(21, 15, 51, 0.86) 39%,
-            rgba(51, 23, 98, 0.79) 100%
-        );
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        @include overlay();
     }
 
     h1,

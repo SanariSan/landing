@@ -11,8 +11,8 @@ body {
     li,
     a,
     p {
-        font-size: 17px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 400;
         line-height: 1.6;
         text-align: center;
     }
@@ -21,6 +21,10 @@ body {
     p {
         color: $text-color-light;
         margin: 20px;
+    }
+
+    p {
+        color: $text-color-dimmed;
     }
 
     h1,
@@ -36,33 +40,24 @@ body {
     }
 
     h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     h2 {
-        font-size: 35px;
-    }
-
-    h3 {
-        font-size: 30px;
-    }
-
-    h4,
-    h5,
-    h6 {
+        font-size: 28px;
         font-weight: 800;
     }
 
+    h3 {
+        font-family: "Roboto", sans-serif !important;
+        font-size: 16px;
+        font-weight: 900;
+    }
+
     h4 {
-        font-size: 25px;
-    }
-
-    h5 {
-        font-size: 20px;
-    }
-
-    h6 {
-        font-size: 15px;
+        font-size: 16px;
+        font-weight: 700;
+        color: $text-color-dimmed;
     }
 
     hr {

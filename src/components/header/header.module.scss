@@ -19,13 +19,11 @@
         ul {
             display: flex;
             flex-direction: row;
-            text-decoration: none;
 
             li {
                 a {
-                    font-family: "Roboto", sans;
+                    font-family: "Roboto", sans-serif;
                     font-weight: 900;
-                    text-decoration: none;
 
                     &:hover {
                         color: $text-color-focus;

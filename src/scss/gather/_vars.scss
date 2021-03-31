@@ -14,6 +14,7 @@ $text-color-focus: #6dfce9;
 $text-color-light: $text-color;
 $text-color-dark: darken($text-color, 70%);
 $text-color-gray: darken($text-color, 40%);
+$text-color-dimmed: darken($text-color, 20%);
 
 // Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
 $grid-gutter-width: 20px;

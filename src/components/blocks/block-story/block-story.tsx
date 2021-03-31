@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import s from "./block-story.module.scss";
-import logo from "../../../img/logo_letters.png";
+import logo from "../../../img/logo_test.png";
 import { Button, Image } from "semantic-ui-react";
 
 const Story: React.FC = () => {
@@ -9,7 +9,7 @@ const Story: React.FC = () => {
         <div className={classNames(s.story)}>
             <Image src={logo} size="medium" className={classNames(s.left)} />
             <div className={classNames(s.right)}>
-                <h4>Наша история</h4>
+                <h2>Наша история</h2>
                 <p>
                     Идея создания нашего креативного агенства зародилась в далеком 2017 году. Два хороших друга с
                     большой мечтой - изменить мир IT индустрии, решились открыть свою компанию. Заказов совсем не было,

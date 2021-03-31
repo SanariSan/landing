@@ -1,0 +1,67 @@
+@import "../../../scss/index";
+
+.abilities {
+    @include flexCenter(column);
+    justify-content: start;
+    padding-top: 60px;
+
+    position: relative;
+    height: 820px;
+
+    background: center/100% no-repeat url("../../../img/2.png") !important;
+    background-size: cover !important;
+    overflow-y: hidden;
+
+    h2,
+    h3,
+    h4,
+    p,
+    button,
+    hr,
+    .cards,
+    .card {
+        z-index: 2;
+        max-width: 1200px;
+        margin: 5px;
+    }
+
+    h2,
+    h3,
+    h4 {
+        margin-bottom: 15px;
+    }
+
+    hr {
+        color: $text-color-gray;
+        margin-bottom: 80px;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cardsRow1,
+    .cardsRow2 {
+        @include flexCenter(row);
+
+        &:first-child {
+            margin-bottom: 40px;
+        }
+
+        .card {
+            @include flexCenter(column);
+
+            margin: 0px 50px;
+
+            img {
+                margin-bottom: 25px;
+                width: 20%;
+            }
+        }
+    }
+
+    .overlay {
+        @include overlay();
+    }
+}

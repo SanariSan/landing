@@ -1,6 +1,5 @@
 import React from "react";
 import { Button, Segment } from "semantic-ui-react";
-import "semantic-ui-css/semantic.min.css";
 import s from "./block-intro.module.scss";
 
 const Intro: React.FC = () => {
@@ -12,7 +11,6 @@ const Intro: React.FC = () => {
             <Button inverted color="blue">
                 LEARN MORE
             </Button>
-            {/* <span className={s.bg} /> */}
             <span className={s.overlay} />
         </Segment>
     );

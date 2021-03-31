@@ -8,6 +8,7 @@
     .left {
         justify-self: center;
         align-self: center;
+        width: 30% !important;
     }
     .right {
         @include flexLeft(column);
@@ -15,7 +16,7 @@
         margin: 40px 460px 60px 0px;
 
         p,
-        h4 {
+        h2 {
             margin-left: 0px;
             color: $text-color-dark;
         }
