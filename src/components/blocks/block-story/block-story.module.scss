@@ -1,0 +1,37 @@
+@import "../../../scss/index";
+
+.story {
+    display: grid;
+    padding: 40px 80px 40px 0px;
+    grid-template-columns: 2fr 1.5fr 0.5fr;
+
+    .left {
+        justify-self: center;
+        align-self: center;
+    }
+    .right {
+        @include flexLeft(column);
+        position: relative;
+        margin: 40px 460px 60px 0px;
+
+        p,
+        h4 {
+            margin-left: 0px;
+            color: $text-color-dark;
+        }
+
+        p {
+            color: $text-color-gray;
+        }
+
+        * {
+            text-align: left;
+        }
+
+        button {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}

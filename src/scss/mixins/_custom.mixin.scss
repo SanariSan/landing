@@ -6,3 +6,12 @@
 
     flex-direction: $direction;
 }
+
+@mixin flexLeft($direction) {
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    margin: auto;
+
+    flex-direction: $direction;
+}

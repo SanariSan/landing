@@ -1,7 +1,14 @@
+@import "../../../scss/index";
+
 .intro {
-    background: center/100% no-repeat url("../../../img/head.png") !important;
+    @include flexCenter(column);
+
     position: relative;
     height: 760px;
+
+    background: center/100% no-repeat url("../../../img/head.png") !important;
+    background-size: cover !important;
+    overflow-y: hidden;
 
     *:first-child {
         margin-top: 60px;

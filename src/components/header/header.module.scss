@@ -1,0 +1,37 @@
+@import "../../scss/index";
+
+.header {
+    @include flexCenter(row);
+
+    padding-top: 15px;
+    position: absolute;
+    justify-content: space-around;
+    width: 100%;
+    color: $text-color-light;
+    z-index: 2;
+
+    .logo {
+        margin-left: 140px;
+    }
+
+    .menu {
+        margin-right: 60px;
+        ul {
+            display: flex;
+            flex-direction: row;
+            text-decoration: none;
+
+            li {
+                a {
+                    font-family: "Roboto", sans;
+                    font-weight: 900;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $text-color-focus;
+                    }
+                }
+            }
+        }
+    }
+}

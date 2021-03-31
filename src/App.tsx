@@ -1,14 +1,21 @@
 import React from "react";
 import "./App.scss";
 import "semantic-ui-css/semantic.min.css";
-import { Header, Intro } from "./components";
+import { Abilities, Examples, Footer, Form, Header, Intro, Reviews, Story } from "./components";
 
 const App: React.FC = () => {
     return (
         <div className="App">
             <Header />
-            <Intro />
-            {/* <Intro /> */}
+            <div className="blocks">
+                <Intro />
+                <Story />
+                <Abilities />
+                <Examples />
+                <Reviews />
+                <Form />
+                <Footer />
+            </div>
         </div>
     );
 };
