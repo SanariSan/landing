@@ -21,6 +21,8 @@ body {
     p {
         color: $text-color-light;
         margin: 20px;
+
+        transition: color $hoverDuration ease;
     }
 
     p {

@@ -1,0 +1,43 @@
+@import "../../../scss/index";
+
+.formBlock {
+    @include flexCenter(row);
+    align-items: flex-start;
+
+    h2,
+    p {
+        color: $text-color-dark;
+    }
+
+    .left {
+        @include flexLeft(column);
+        margin: 50px 50px 50px 300px;
+
+        form {
+            input,
+            textarea,
+            button {
+                margin: 12px auto;
+            }
+
+            input,
+            textarea {
+                width: 100%;
+                padding: 15px;
+            }
+
+            input::placeholder {
+                opacity: 1;
+            }
+
+            textarea::placeholder {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .right {
+        @include flexLeft(column);
+        margin: 50px 300px 50px 50px;
+    }
+}

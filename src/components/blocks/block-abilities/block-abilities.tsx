@@ -11,7 +11,7 @@ import s from "./block-abilities.module.scss";
 
 const Abilities: React.FC = () => {
     return (
-        <div className={classNames(s.abilities)}>
+        <div className={classNames(s.abilitiesBlock)}>
             <h2>Мы можем все и даже больше</h2>
             <h4>Оказываем комлексное обслуживание вашего бизнеса</h4>
             <hr />

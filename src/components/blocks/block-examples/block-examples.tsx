@@ -7,7 +7,7 @@ import ex2 from "../../../img/ex2.png";
 
 const Examples: React.FC = () => {
     return (
-        <div className={classNames(s.examples)}>
+        <div className={classNames(s.examplesBlock)}>
             <h2>Наши работы</h2>
             <div className={classNames(s.cardsWrapper)}>
                 <span className={s.overlay} />

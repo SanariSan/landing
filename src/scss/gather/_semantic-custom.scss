@@ -1,5 +1,14 @@
-.ui.segment {
-    border: none;
-    border-radius: 0px;
-    margin: 0px;
+@import "./vars";
+
+.ui {
+    &.segment {
+        border: none;
+        border-radius: 0px;
+        margin: 0px;
+    }
+
+    &.button {
+        transition: opacity $hoverDuration ease, background-color $hoverDuration ease, color $hoverDuration ease,
+            box-shadow $hoverDuration ease, background $hoverDuration ease !important;
+    }
 }

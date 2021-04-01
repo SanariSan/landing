@@ -1,6 +1,6 @@
 @import "../../../scss/index";
 
-.examples {
+.examplesBlock {
     @include flexCenter(column);
     justify-content: space-between;
     height: 700px;
@@ -12,9 +12,14 @@
         margin: 10px 5px;
     }
 
+    img {
+        border: 2px solid transparent;
+        cursor: pointer;
+        transition: border-color ease $hoverDuration;
+    }
+
     img:hover {
         border: 2px solid $text-color-gray;
-        cursor: pointer;
     }
 
     h2 {

@@ -6,7 +6,7 @@ import s from "./header.module.scss";
 
 const Header: React.FC = () => {
     return (
-        <div className={classNames(s.header)}>
+        <div className={classNames(s.headerBlock)}>
             <Image src={logo} size="small" className={classNames(s.logo)} />
             <nav className={classNames(s.menu)}>
                 <ul>

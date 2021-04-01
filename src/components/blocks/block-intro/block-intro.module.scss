@@ -1,6 +1,6 @@
 @import "../../../scss/index";
 
-.intro {
+.introBlock {
     @include flexCenter(column);
 
     position: relative;
@@ -23,7 +23,11 @@
     button,
     hr {
         z-index: 2;
-        max-width: 850px;
+    }
+
+    h1 {
+        text-align: center;
+        max-width: 1000px;
     }
 
     p {

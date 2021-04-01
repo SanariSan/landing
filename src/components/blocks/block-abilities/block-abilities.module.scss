@@ -1,6 +1,6 @@
 @import "../../../scss/index";
 
-.abilities {
+.abilitiesBlock {
     @include flexCenter(column);
     padding-top: 30px;
 
@@ -50,6 +50,7 @@
 
         .card {
             @include flexCenter(column);
+            align-items: center;
 
             margin: 0px 50px;
 

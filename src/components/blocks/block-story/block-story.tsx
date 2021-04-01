@@ -6,7 +6,7 @@ import { Button, Image } from "semantic-ui-react";
 
 const Story: React.FC = () => {
     return (
-        <div className={classNames(s.story)}>
+        <div className={classNames(s.storyBlock)}>
             <Image src={logo} size="medium" className={classNames(s.left)} />
             <div className={classNames(s.right)}>
                 <h2>Наша история</h2>
