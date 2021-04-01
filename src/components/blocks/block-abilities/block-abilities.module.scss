@@ -2,8 +2,7 @@
 
 .abilities {
     @include flexCenter(column);
-    justify-content: start;
-    padding-top: 60px;
+    padding-top: 30px;
 
     position: relative;
     height: 820px;
@@ -38,7 +37,7 @@
 
     .cards {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 300px 300px;
     }
 
     .cardsRow1,

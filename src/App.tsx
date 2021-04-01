@@ -12,6 +12,7 @@ const App: React.FC = () => {
                 <Story />
                 <Abilities />
                 <Examples />
+                <Abilities />
                 <Reviews />
                 <Form />
                 <Footer />

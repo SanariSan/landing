@@ -1,0 +1,48 @@
+@import "../../../scss/index";
+
+.examples {
+    @include flexCenter(column);
+    justify-content: space-between;
+    height: 700px;
+
+    h2,
+    a {
+        color: $text-color-dark;
+        z-index: 3;
+        margin: 10px 5px;
+    }
+
+    img:hover {
+        border: 2px solid $text-color-gray;
+        cursor: pointer;
+    }
+
+    h2 {
+        align-self: flex-start;
+        margin-top: 45px;
+        margin-left: 340px;
+    }
+
+    button {
+        margin-top: 100px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .cardsWrapper {
+        position: relative;
+
+        .overlay {
+            @include overlay();
+            height: 50%;
+            background: rgb(184, 184, 184);
+        }
+
+        .cards {
+            @include flexCenter(row);
+            @include overlay();
+            position: relative;
+            background: rgb(184, 184, 184);
+            width: max-content;
+        }
+    }
+}
