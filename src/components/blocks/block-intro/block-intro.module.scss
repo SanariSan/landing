@@ -14,15 +14,12 @@
         margin-top: 60px;
     }
 
-    .overlay {
-        @include overlay();
+    *:not(.overlay) {
+        z-index: 2;
     }
 
-    h1,
-    p,
-    button,
-    hr {
-        z-index: 2;
+    .overlay {
+        @include overlay();
     }
 
     h1 {

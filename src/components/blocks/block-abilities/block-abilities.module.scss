@@ -2,10 +2,10 @@
 
 .abilitiesBlock {
     @include flexCenter(column);
-    padding-top: 30px;
+    padding: 60px 0px;
 
     position: relative;
-    height: 820px;
+    height: 920px;
 
     background: center/100% no-repeat url("../../../img/2.png") !important;
     background-size: cover !important;
@@ -19,7 +19,6 @@
     hr,
     .cards,
     .card {
-        z-index: 2;
         max-width: 1200px;
         margin: 5px;
     }
@@ -47,18 +46,10 @@
         &:first-child {
             margin-bottom: 40px;
         }
+    }
 
-        .card {
-            @include flexCenter(column);
-            align-items: center;
-
-            margin: 0px 50px;
-
-            img {
-                margin-bottom: 25px;
-                width: 20%;
-            }
-        }
+    *:not(.overlay) {
+        z-index: 2;
     }
 
     .overlay {

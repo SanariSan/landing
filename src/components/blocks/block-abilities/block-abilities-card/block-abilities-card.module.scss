@@ -1,0 +1,14 @@
+@import "../../../../scss/index";
+
+.card {
+    @include flexCenter(column);
+    justify-content: flex-start;
+
+    min-height: 210px;
+    margin: 0px 50px;
+
+    img {
+        margin-bottom: 25px;
+        width: 20%;
+    }
+}

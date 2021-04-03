@@ -8,7 +8,7 @@
     .left {
         justify-self: center;
         align-self: center;
-        width: 30% !important;
+        // width: 15% !important;
     }
     .right {
         @include flexLeft(column);

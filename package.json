@@ -2,6 +2,7 @@
     "name": "landing",
     "version": "0.1.0",
     "private": true,
+    "proxy": "http://localhost:3001",
     "dependencies": {
         "@dbeining/react-atom": "^4.1.15",
         "bootstrap": "^4.6.0",
