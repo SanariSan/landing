@@ -3,7 +3,7 @@
 .introBlock {
     @include flexCenter(column);
 
-    position: relative;
+    position: absolute;
     height: 760px;
 
     background: center/100% no-repeat url("../../../img/1.png") !important;

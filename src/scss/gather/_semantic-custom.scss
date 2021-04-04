@@ -5,10 +5,37 @@
         border: none;
         border-radius: 0px;
         margin: 0px;
+        padding: 40px 0px;
+    }
+
+    &.modal {
+        .content {
+            text-align: center;
+        }
     }
 
     &.button {
         transition: opacity $hoverDuration ease, background-color $hoverDuration ease, color $hoverDuration ease,
             box-shadow $hoverDuration ease, background $hoverDuration ease !important;
+    }
+
+    &.menu {
+        background-color: transparent;
+        border: none;
+
+        .item {
+            padding: 0px;
+            border: 2px solid transparent;
+            border-radius: 50% !important;
+            transition: border-color ease $hoverDuration;
+
+            &::before {
+                display: none;
+            }
+        }
+
+        .item:hover {
+            border: 2px solid $text-color-gray;
+        }
     }
 }

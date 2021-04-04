@@ -19,9 +19,9 @@ const LinkService = {
             })
             .getRequest();
 
-        const response = await fetch(`${config.apiUrl}${path ? path : ""}`, requestOptions);
-
-        return handleResponse(response) as Promise<T>;
+        return fetch(`${config.apiUrl}${path ? path : ""}`, requestOptions).then(
+            response => handleResponse(response) as Promise<T>,
+        );
     },
     post: async <T>({ path, body }: IRequestPost): Promise<T> => {
         const requestOptions: RequestInit = new RequestBuilder()
@@ -32,9 +32,9 @@ const LinkService = {
             .makeBody(JSON.stringify(body))
             .getRequest();
 
-        const response = await fetch(`${config.apiUrl}${path ? path : ""}`, requestOptions);
-
-        return handleResponse(response) as Promise<T>;
+        return fetch(`${config.apiUrl}${path ? path : ""}`, requestOptions).then(
+            response => handleResponse(response) as Promise<T>,
+        );
     },
 };
 

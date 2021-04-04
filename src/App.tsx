@@ -5,6 +5,7 @@ import { Abilities, Examples, Footer, Form, Header, Intro, Reviews, Story } from
 
 const App: React.FC = () => {
     return (
+        // <div>
         <div className="App">
             <Header />
             <div className="blocks">
@@ -12,12 +13,13 @@ const App: React.FC = () => {
                 <Story />
                 <Abilities />
                 <Examples />
-                <Abilities />
-                {/* <Reviews /> */}
+                {/* <Abilities /> */}
+                <Reviews />
                 <Form />
                 <Footer />
             </div>
         </div>
+        // </div>
     );
 };
 

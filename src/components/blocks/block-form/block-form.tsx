@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import React, { useRef, useState } from "react";
-import { Button, Input, TextArea, Modal, Header, Icon } from "semantic-ui-react";
+import { Button, Input, TextArea, Modal, Header, Icon, Segment } from "semantic-ui-react";
 import { LinkService } from "../../../services";
 import { config } from "../../../config";
 import s from "./block-form.module.scss";
@@ -76,20 +76,28 @@ const Form: React.FC = () => {
             LinkService.post<{ status: "OK" | "ERR"; data?: Object; err?: string }>({
                 path: config.appealUrl,
                 body: { name, email, subject, message },
-            }).then(({ status, data, err }) => {
-                if (status === "ERR") {
-                    console.log(err);
-                    return setStatusMessage({ status: false, message: "Произошла ошибка, подробно в консоли" });
-                }
+            })
+                .then(({ status, data, err }) => {
+                    if (status === "ERR") {
+                        console.log(err);
+                        return setStatusMessage({ status: false, message: "Произошла ошибка, подробно в консоли" });
+                    }
 
-                console.log(data);
-                setStatusMessage({ status: true, message: "Заявка получена" });
-            });
+                    console.log(data);
+                    setStatusMessage({ status: true, message: "Заявка получена" });
+                })
+                .catch(err => {
+                    console.log(err);
+                    setStatusMessage({
+                        status: false,
+                        message: "Произошла непредвиденная ошибка, подробно в консоли",
+                    });
+                });
         }
     };
 
     return (
-        <div className={classNames(s.formBlock)}>
+        <Segment id={"form"} className={classNames(s.formBlock)}>
             <div className={classNames(s.left)}>
                 <h2>Связаться с нами</h2>
                 <form onSubmit={handleForm}>
@@ -131,7 +139,7 @@ const Form: React.FC = () => {
                 <p>СтройМонолит</p>
                 <p>Аркада</p>
             </div>
-        </div>
+        </Segment>
     );
 };
 

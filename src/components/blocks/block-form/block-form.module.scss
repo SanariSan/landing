@@ -9,11 +9,17 @@
         color: $text-color-dark;
     }
 
+    h2 {
+        margin-bottom: 30px;
+    }
+
     .left {
         @include flexLeft(column);
         margin: 50px 50px 50px 300px;
 
         form {
+            min-height: 500px;
+
             input,
             textarea,
             button {

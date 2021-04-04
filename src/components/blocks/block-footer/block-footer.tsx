@@ -1,12 +1,12 @@
 import React from "react";
 import classNames from "classnames";
 import s from "./block-footer.module.scss";
-import { Button, Icon, Image, Input } from "semantic-ui-react";
+import { Button, Icon, Image, Input, Segment } from "semantic-ui-react";
 import logo from "../../../img/logo_old.png";
 
 const Footer: React.FC = () => {
     return (
-        <div className={classNames(s.footer)}>
+        <Segment className={classNames(s.footer)}>
             <div className={classNames(s.wrapper)}>
                 <div className={classNames(s.left)}>
                     <Image src={logo} size="small" className={classNames(s.logo)} />
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <span className={s.overlay} />
-        </div>
+        </Segment>
     );
 };
 

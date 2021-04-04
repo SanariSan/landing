@@ -8,25 +8,26 @@ const Header: React.FC = () => {
     return (
         <div className={classNames(s.headerBlock)}>
             <Image src={logo} size="small" className={classNames(s.logo)} />
+
             <nav className={classNames(s.menu)}>
                 <ul>
                     <li>
-                        <a href="#">HOME</a>
+                        <a href="#intro">HOME</a>
                     </li>
                     <li>
-                        <a href="#">ABOUT</a>
+                        <a href="#story">ABOUT</a>
                     </li>
                     <li>
-                        <a href="#">EXPERTISE</a>
+                        <a href="#abilities">EXPERTISE</a>
                     </li>
                     <li>
-                        <a href="#">WORKS</a>
+                        <a href="#examples">WORKS</a>
                     </li>
                     <li>
-                        <a href="#">PEOPLE SAY</a>
+                        <a href="#reviews">PEOPLE SAY</a>
                     </li>
                     <li>
-                        <a href="#">CONTACT</a>
+                        <a href="#form">CONTACT</a>
                     </li>
                 </ul>
             </nav>

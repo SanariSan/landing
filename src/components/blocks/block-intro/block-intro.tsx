@@ -4,7 +4,7 @@ import s from "./block-intro.module.scss";
 
 const Intro: React.FC = () => {
     return (
-        <Segment className={s.introBlock}>
+        <Segment id={"intro"} className={s.introBlock}>
             <h1>Креативное агенство которое вы искали</h1>
             <hr />
             <p>Мы - CustomServ, агенство по разработке креативного веб дизайна и прогрессивных мобильных приложений.</p>

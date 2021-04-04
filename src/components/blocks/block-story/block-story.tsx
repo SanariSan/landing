@@ -2,11 +2,11 @@ import classNames from "classnames";
 import React from "react";
 import s from "./block-story.module.scss";
 import logo from "../../../img/logo_test.png";
-import { Button, Image } from "semantic-ui-react";
+import { Button, Image, Segment } from "semantic-ui-react";
 
 const Story: React.FC = () => {
     return (
-        <div className={classNames(s.storyBlock)}>
+        <Segment id={"story"} className={classNames(s.storyBlock)}>
             <Image src={logo} size="small" className={classNames(s.left)} />
             <div className={classNames(s.right)}>
                 <h2>Наша история</h2>
@@ -25,7 +25,7 @@ const Story: React.FC = () => {
                     LEARN MORE
                 </Button>
             </div>
-        </div>
+        </Segment>
     );
 };
 

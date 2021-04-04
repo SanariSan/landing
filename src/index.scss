@@ -22,7 +22,7 @@ body {
         color: $text-color-light;
         margin: 20px;
 
-        transition: color $hoverDuration ease;
+        transition: all $hoverDuration ease;
     }
 
     p {
@@ -59,6 +59,12 @@ body {
     h4 {
         font-size: 16px;
         font-weight: 700;
+        color: $text-color-dimmed;
+    }
+
+    h5 {
+        font-size: 12px;
+        font-weight: 400;
         color: $text-color-dimmed;
     }
 

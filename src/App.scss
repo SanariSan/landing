@@ -1,13 +1,16 @@
 @import "scss/index";
 
 .App {
+    display: block;
     position: relative;
+    scroll-behavior: smooth;
 
     .blocks {
         @include flexCenter(column);
         width: 100%;
 
         div {
+            scroll-margin-top: 6.1em;
             width: 100%;
         }
     }

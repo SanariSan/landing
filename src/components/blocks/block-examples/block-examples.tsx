@@ -1,13 +1,13 @@
 import classNames from "classnames";
 import React from "react";
-import { Button, Image } from "semantic-ui-react";
+import { Button, Image, Segment } from "semantic-ui-react";
 import s from "./block-examples.module.scss";
 import ex1 from "../../../img/ex1.png";
 import ex2 from "../../../img/ex2.png";
 
 const Examples: React.FC = () => {
     return (
-        <div className={classNames(s.examplesBlock)}>
+        <Segment id={"examples"} className={classNames(s.examplesBlock)}>
             <h2>Наши работы</h2>
             <div className={classNames(s.cardsWrapper)}>
                 <span className={s.overlay} />
@@ -20,7 +20,7 @@ const Examples: React.FC = () => {
             <Button inverted color="blue">
                 LOAD MORE
             </Button>
-        </div>
+        </Segment>
     );
 };
 
