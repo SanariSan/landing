@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import React from "react";
 import s from "./block-story.module.scss";
-import logo from "../../../img/logo_test.png";
+import logo from "../../../img/logo_letters.png";
 import { Button, Image, Segment } from "semantic-ui-react";
 
 const Story: React.FC = () => {
